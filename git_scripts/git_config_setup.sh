@@ -18,6 +18,9 @@ $git_config alias.fetchall '!f() { git for-each-ref --format="%(refname)" refs/r
 printf "Installing alias.co\n"
 $git_config alias.co 'checkout'
 
+printf "Installing alias.gitk\n"
+$git_config alias.gitk '!gitk --all &'
+
 printf "\n\033[0;37m=========================================\033[0m\n\033[0;32mFinished Installing Global Git Aliases!!!\033[0m\n\n\n\n"
 
 printf "\033[0;32mInstalling Global VSDiffMerge Settings\n\033[1;32m======================================\033[0m\n\n"
