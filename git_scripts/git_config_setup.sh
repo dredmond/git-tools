@@ -4,7 +4,7 @@ git_config="git config --global"
 printf "\n\033[0;32mInstalling Global Git Aliases\n\033[0;37m=============================\033[0m\n\n"
 
 printf "Installing alias.graphlog\n"
-$git_config alias.graphlog 'log --all --decorate=short --graph'
+$git_config alias.graphlog 'log --all --decorate=short --graph --date-order'
 
 printf "Installing alias.pullrb\n"
 $git_config alias.pullrb 'pull --rebase'
